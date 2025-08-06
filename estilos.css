@@ -1,0 +1,100 @@
+*{
+    background-color: #010129;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    text-align: center;
+}
+
+h1{
+
+    padding: 100px;
+    margin-bottom: 500px;
+    font-size: 50px;
+
+    animation-duration: 4s;
+    animation-name: fodeIn;
+
+}
+
+
+h2{
+
+    margin-bottom: 500px;
+    font-size: 50px;
+
+    animation-duration: 4s;
+    animation-name: shew, fodeIn;
+
+    view-timeline:  --h2;
+    view-timeline-axis: block;
+    animation-timeline: --h2;
+    animation-range: entry 25% cover 60%;
+}
+
+h3{
+    font-size: 20px;
+    
+    animation-duration: 4s;
+    animation-name: shew, fodeIn;
+
+    view-timeline:  --h3;
+    view-timeline-axis: block;
+    animation-timeline: --h3;
+    animation-range: entry 25% cover 25%;
+}
+
+p{
+    font-size: 30px;
+    padding: 60px;
+    margin-bottom: 350px;
+
+    animation-duration: 4s;
+    animation-name: shew, fodeIn;
+
+    view-timeline:  --p;
+    view-timeline-axis: block;
+    animation-timeline: --p;
+    animation-range: entry 25% cover 60%;
+}
+
+
+img{
+    margin: 0 auto;
+    display: block;        
+    width: 50%;
+    height: 50%;
+    margin-bottom: 40px;
+
+    animation-duration: 4s;
+    animation-name: shew, fodeIn;
+
+    view-timeline:  --image;
+    view-timeline-axis: block;
+    animation-timeline: --image;
+    animation-range: entry 0% cover 15%;
+}
+
+@keyframes shew{ 
+    from {        
+        opacity: 0;
+        scale: 25%;
+    }
+
+    to { 
+        opacity: 1;
+        scale: 100%;
+    }
+}
+
+@keyframes fodeIn {
+   from {        
+        translate: 100vw 0;
+        scale: 200% 1;
+    }
+
+    to { 
+        translate: 0 0;
+        scale: 100% 1;
+    }
+}
